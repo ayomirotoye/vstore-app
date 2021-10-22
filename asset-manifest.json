@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/vstore-app/static/css/main.e9f62758.chunk.css",
-    "main.js": "/vstore-app/static/js/main.eb544c9b.chunk.js",
-    "main.js.map": "/vstore-app/static/js/main.eb544c9b.chunk.js.map",
+    "main.js": "/vstore-app/static/js/main.eed67f4d.chunk.js",
+    "main.js.map": "/vstore-app/static/js/main.eed67f4d.chunk.js.map",
     "runtime-main.js": "/vstore-app/static/js/runtime-main.c9f3479d.js",
     "runtime-main.js.map": "/vstore-app/static/js/runtime-main.c9f3479d.js.map",
     "static/css/2.0a9ec390.chunk.css": "/vstore-app/static/css/2.0a9ec390.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.035b4586.chunk.js",
     "static/css/main.e9f62758.chunk.css",
-    "static/js/main.eb544c9b.chunk.js"
+    "static/js/main.eed67f4d.chunk.js"
   ]
 }
