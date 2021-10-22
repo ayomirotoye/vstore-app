@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+.logo {
+  /* background: url("../assets/img/vLogo.png"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  border-radius: 0.25rem !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mb-20 {
+  margin-bottom: 20px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchbar-div {
+  margin: 10px;
+  width: 320px;
+  padding-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-input {
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control:focus,
+.form-control:active {
+  border-color: var(--secondary-color) !important;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+a {
+  color: var(--secondary-color) !important;
+  text-decoration: none !important;
+}
+
+a:hover{
+  font-weight: 600;
 }
