@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/vstore-app/static/css/main.e9f62758.chunk.css",
-    "main.js": "/vstore-app/static/js/main.eed67f4d.chunk.js",
-    "main.js.map": "/vstore-app/static/js/main.eed67f4d.chunk.js.map",
+    "main.js": "/vstore-app/static/js/main.32e5a4c7.chunk.js",
+    "main.js.map": "/vstore-app/static/js/main.32e5a4c7.chunk.js.map",
     "runtime-main.js": "/vstore-app/static/js/runtime-main.c9f3479d.js",
     "runtime-main.js.map": "/vstore-app/static/js/runtime-main.c9f3479d.js.map",
     "static/css/2.0a9ec390.chunk.css": "/vstore-app/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.035b4586.chunk.js": "/vstore-app/static/js/2.035b4586.chunk.js",
-    "static/js/2.035b4586.chunk.js.map": "/vstore-app/static/js/2.035b4586.chunk.js.map",
+    "static/js/2.8959623c.chunk.js": "/vstore-app/static/js/2.8959623c.chunk.js",
+    "static/js/2.8959623c.chunk.js.map": "/vstore-app/static/js/2.8959623c.chunk.js.map",
     "static/js/3.0e66d759.chunk.js": "/vstore-app/static/js/3.0e66d759.chunk.js",
     "static/js/3.0e66d759.chunk.js.map": "/vstore-app/static/js/3.0e66d759.chunk.js.map",
     "index.html": "/vstore-app/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/vstore-app/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.e9f62758.chunk.css.map": "/vstore-app/static/css/main.e9f62758.chunk.css.map",
-    "static/js/2.035b4586.chunk.js.LICENSE.txt": "/vstore-app/static/js/2.035b4586.chunk.js.LICENSE.txt"
+    "static/js/2.8959623c.chunk.js.LICENSE.txt": "/vstore-app/static/js/2.8959623c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c9f3479d.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.035b4586.chunk.js",
+    "static/js/2.8959623c.chunk.js",
     "static/css/main.e9f62758.chunk.css",
-    "static/js/main.eed67f4d.chunk.js"
+    "static/js/main.32e5a4c7.chunk.js"
   ]
 }
