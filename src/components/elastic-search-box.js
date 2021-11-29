@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Dropdown from "react-bootstrap/Dropdown";
 import { FloatingLabel } from "react-bootstrap";
+import { capitaliseFirstLetter, isNullOrUndefined } from "../utils/tools";
 import axios from "axios";
-import { searchValUrl } from "../utils/static";
-import { capitaliseFirstLetter } from "../utils/tools";
+import { elasticSearchValUrl } from "../utils/static";
 
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
   <a
@@ -46,7 +46,9 @@ const CustomMenu = React.forwardRef(
     );
   }
 );
-const SearchableDropdown = () => {
+
+
+export default function ElasticSearchBox() {
   const [values, setValues] = useState("");
   const [options, setOptions] = useState(Object.assign([]));
 
@@ -56,7 +58,7 @@ const SearchableDropdown = () => {
     let resData = [];
     try {
       const { data } = await axios.get(
-        searchValUrl.concat("?searchBy=", e.target.value),
+        elasticSearchValUrl.concat("?searchBy=", e.target.value),
         {}
       );
       setOptions(data);
@@ -99,7 +101,7 @@ const SearchableDropdown = () => {
                         textAlign: "right",
                       }}
                     >
-                      {capitaliseFirstLetter(
+                     {isNullOrUndefined( opt.data.tag) ? capitaliseFirstLetter(
                         opt.data.tag.toLowerCase(),
                         0
                       ).concat(
@@ -111,11 +113,11 @@ const SearchableDropdown = () => {
                         opt.data.beneficiaryName,
                         "|",
                         opt.data.transactionDate
-                      )}
+                      ): ""}
                     </span>
                   </div>
                 </Dropdown.Item>
-              ) : (
+              ) :  opt.data.tag === "BILLER" ? (
                 <Dropdown.Item
                   eventKey={index}
                   onClick={showDetails}
@@ -132,7 +134,36 @@ const SearchableDropdown = () => {
                         textAlign: "right",
                       }}
                     >
-                      {capitaliseFirstLetter(
+                     {isNullOrUndefined( opt.data.tag) ? capitaliseFirstLetter(
+                        opt.data.tag.toLowerCase(),
+                        0
+                      ).concat(
+                        "|",
+                        opt.data.billerId,
+                        "|",
+                        opt.data.billerName
+                      ): ""}
+                    </span>
+                  </div>
+                </Dropdown.Item>
+              ): (
+                <Dropdown.Item
+                  eventKey={index}
+                  onClick={showDetails}
+                  data={opt.data}
+                >
+                  <div
+                    style={{
+                      display: "inline-block",
+                      wordWrap: "break-word",
+                    }}
+                  >
+                    <span
+                      style={{
+                        textAlign: "right",
+                      }}
+                    >
+                      {!isNullOrUndefined( opt.data.tag) ? capitaliseFirstLetter(
                         opt.data.tag.toLowerCase(),
                         0
                       ).concat(
@@ -142,7 +173,7 @@ const SearchableDropdown = () => {
                         opt.data.beneficiaryAccountNo,
                         "|",
                         opt.data.beneficiaryBank
-                      )}
+                      ): ""}
                     </span>
                   </div>
                 </Dropdown.Item>
@@ -152,6 +183,4 @@ const SearchableDropdown = () => {
       </Dropdown.Menu>
     </Dropdown>
   );
-};
-
-export default SearchableDropdown;
+}

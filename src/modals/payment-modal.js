@@ -111,8 +111,8 @@ function PaymentModal({
                   <Form.Control
                     type="text"
                     placeholder=""
-                    readOnly={true}
                     value={values.beneficiaryName ?? ""}
+                    onChange={handle_input_change}
                   />
                 </FloatingLabel>
               ) : (

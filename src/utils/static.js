@@ -1,6 +1,7 @@
-export const getTagsUrl ="http://localhost:9100/vstore/tags";
-export const getCategoriesUrl ="http://localhost:9100/vstore/categories";
-export const doCreateTnxUrl ="http://localhost:9100/vstore/store";
-export const doCreateBillerUrl ="http://localhost:9100/vstore/biller";
-export const searchValUrl ="http://localhost:9100/vstore";
-export const nameEnqUrl ="http://localhost:9100/vstore/name-enquiry?accountNo=";
+export const getTagsUrl = `${process.env.REACT_APP_API_BASE_URL}/vstore/tags`;
+export const getCategoriesUrl = `${process.env.REACT_APP_API_BASE_URL}/vstore/categories`;
+export const doCreateTnxUrl = `${process.env.REACT_APP_API_BASE_URL}/vstore/store`;
+export const doCreateBillerUrl = `${process.env.REACT_APP_API_BASE_URL}/vstore/biller`;
+export const elasticSearchValUrl = `${process.env.REACT_APP_API_BASE_URL}/vstore/elastic/search/vee-tranx-engine`;
+export const searchValUrl = `${process.env.REACT_APP_API_BASE_URL}/vstore`;
+export const nameEnqUrl = `${process.env.REACT_APP_API_BASE_URL}/vstore/name-enquiry?accountNo=`;
